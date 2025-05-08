@@ -1,0 +1,235 @@
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #cf8413;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .header-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+  margin: 20px;
+  background: linear-gradient(135deg, #ffcc80, #ffe0b2);
+  border: 3px dashed #cf8413;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.welder-img {
+  width: 80px;
+  height: auto;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #b35400;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.header-content p {
+  margin: 8px 0 0;
+  font-size: 1em;
+  color: #444;
+  font-style: italic;
+}
+
+/* ฟอร์มและ input สวยขึ้น */
+input[type="number"] {
+  padding: 12px;
+  width: 220px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #cf8413;
+  background-color: #fff8e1;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: border 0.3s ease;
+}
+input[type="number"]:focus {
+  outline: none;
+  border-color: #ff9800;
+  background-color: #fff3e0;
+}
+
+/* ตารางล้ำขึ้น */
+table {
+  border: 2px solid #ffa726;
+}
+thead {
+  background-color: #ffa726;
+}
+tbody tr:hover {
+  background-color: #ffe0b2;
+}
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #cf8413;
+      padding: 10px 20px;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .logo-container {
+      flex-shrink: 0;
+    }
+    .logo {
+  height: 40px;
+  width: auto;
+}
+    .logo-container img {
+      height: 40px; 
+      width: auto;
+      display: block;
+    }
+
+    .header-text {
+      margin-left: 15px;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 1.4em;
+    }
+
+    .header-text p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    main {
+      padding: 20px;
+    }
+    main {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #cf8413;
+      margin-bottom: 20px;
+    }
+
+    .illustration-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .illustration-list li {
+      background-color: #fff;
+      padding: 15px 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .illustration-list li:hover {
+      background-color: #ffe9c4;
+      transform: translateY(-4px);
+    }
+
+    .preview {
+      display: none;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      z-index: 100;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+
+    .illustration-list li:hover .preview {
+      display: block;
+    }
+
+    .preview img {
+      max-width: 200px;
+      max-height: 150px;
+      border-radius: 4px;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      width: 200px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+
+    #illustrationImage {
+      display: none;
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 14px 20px;
+      text-align: center;
+    }
+
+    thead {
+      background-color: #cf8413;
+      color: white;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    th:first-child, td:first-child {
+      border-top-left-radius: 10px;
+    }
+
+    th:last-child, td:last-child {
+      border-top-right-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 50px;
+    }
+   
+  .red-text {
+    color: red;
+    font-weight: bold;
+  }

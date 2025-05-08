@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ARC Welding Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="kkt-01.png" alt="Koken Logo">
+    </div>
+    <div class="header-text">
+      <h1>WELCOME TO WELDING CALCULATOR V.1</h1>
+      <p>Program กำลังอยู่ในช่วงพัฒนา</p>
+    </div>
+  </header>
+
+<main>
+  <section style="text-align: center; margin-bottom: 40px;">
+    <h2 style="font-size: 2em; color: #cf8413; margin-bottom: 10px;">เลือก รูปภาพท่าเชื่อมให้ตรงกับ DRAWING</h2>
+    <p style="color: #555; font-style: italic;">กรุณาเลือกภาพที่ตรงกับแบบ Drawing เพื่อคำนวณค่าการเชื่อม</p>
+  </section>
+
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <ul class="illustration-list" style="justify-content: center;">
+      <li onclick="selectIllustration('ILL-01')">
+        ILL-01
+        <div class="preview"><img src="ILL-01.png" alt="ILL-01"></div>
+      </li>
+      <li onclick="selectIllustration('ILL-02')">
+        ILL-02
+        <div class="preview"><img src="ILL-02.png" alt="ILL-02"></div>
+      </li>
+      <li onclick="selectIllustration('ILL-03')">
+        ILL-03
+        <div class="preview"><img src="ILL-03.png" alt="ILL-03"></div>
+      </li>
+      <li onclick="selectIllustration('ILL-04')">
+        ILL-04
+        <div class="preview"><img src="ILL-04.png" alt="ILL-04"></div>
+      </li>
+      <li onclick="selectIllustration('ILL-05')">
+        ILL-05
+        <div class="preview"><img src="ILL-05.png" alt="ILL-05"></div>
+      </li>
+      <li onclick="selectIllustration('ILL-06')">
+        ILL-06
+        <div class="preview"><img src="ILL-06.png" alt="ILL-06"></div>
+      </li>
+    </ul>
+
+    <div style="margin-top: 40px; text-align: center;">
+      <label for="thickness" style="font-size: 1.1em;"><strong>Plate Thickness (t) [mm]</strong><br>กรอกความหนา MAT ที่น้อยที่สุด :</label><br>
+      <input type="number" id="thickness" oninput="calculate()" placeholder="เช่น 5.0">
+    </div>
+
+    <img id="illustrationImage" src="" alt="Selected Illustration">
+
+    <table style="margin-top: 40px;">
+      <thead>
+        <tr>
+          <th>Plate Thickness (t) [mm]</th>
+          <th>Fillet Leg Length (L)</th>
+          <th>Penetration Depth (d)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="tVal">-</td>
+          <td id="lVal">-</td>
+          <td id="dVal">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  © 2025 ARC Welding Calculator. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
